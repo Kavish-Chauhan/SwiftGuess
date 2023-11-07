@@ -537,7 +537,7 @@ celeb ()
     //Shahrukh Khan
 
     char shahin[MAX];
-    char shahset[] = "shahrukh";
+    char shahset[] = "shah";
     total+=3;
     printf("\nFirst\nHint 1: He is a highly acclaimed Indian actor with a career spanning decades.\n");
     scanf("%s", shahin);
@@ -581,7 +581,7 @@ celeb ()
                         scored+=1;
                     }
                 else
-                    printf("Wrong guess. The answer is Shahrukh Khan\n");
+                    printf("Wrong guess. The answer is Shah Rukh Khan\n");
         }
     }
 
@@ -1553,6 +1553,12 @@ main ()
     }
     //Introduction
     //text for category selection
+    if (runstn==1 && runcele==1 && runpla==1)
+    {
+        printf("\n\nYou have completed the game.\nCalculating your score...");
+        score();
+    }
+    else{
     printf("\nType\n1 to play for stations\n2 to play for celebrities\n3 to play for famous spots.\n");
     int cat;
     scanf("%d",&cat);
@@ -1571,7 +1577,7 @@ main ()
     default:
         printf("Learn typing first.");
     }
-
+    }
 }
 
 
